@@ -169,31 +169,6 @@ header {
     border-color: var(--in-sel-border);
   } 
 }
-
-
-
-/* :root {
-  --primary-color: #01d2b2;
-  --bg-color: #eee;
-  --text-color: #000;
-  --card-bg: #fff;
-  --in-sel-bg: #fff;        /* كان defult 
-  --in-sel-text: #000;      /* كان defult 
-  --in-sel-border: #ccc;    /* كان defult 
-}
-
-/* ضيف في الآخر 
-.status {
-  display: block;
-  margin-top: 0.75rem;
-  text-align: center;
-  font-size: 0.9rem;
-  min-height: 1.2rem;
-  color: #d9534f;
-}
-.status.success { color: #2ecc71; }
-
-/* Media query بسيطة للموبايل 
 @media (max-width: 480px) {
   .content-inputs .swap-con {
     flex-direction: column;
@@ -208,4 +183,4 @@ header {
     align-self: center;
     transform: rotate(90deg);
   }
-} */
+} 
