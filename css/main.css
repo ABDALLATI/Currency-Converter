@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+  .dark-mode {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --card-bg: #1e1e1e;
+    --in-sel-bg: #333;
+    --in-sel-text: #fff;
+    --in-sel-border: #555;
+}
+:root {
+  --primary-color: #01d2b2;
+  --bg-color: #eee;
+  --text-color: #000;
+  --card-bg: #fff;
+  --in-sel-bg: #fff;
+  --in-sel-text: #222;
+  --in-sel-border: #ccc;
+}
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 1rem;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  .logo-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .thems button {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+}
+.container {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+  }
+  .content-text {
+    background-color: var(--bg-color);
+    h1 {
+      margin: 3rem 0 0;
+      text-align: center;
+    }
+    p {
+      margin: 0 0 3rem 0;
+      
+    }
+  }
+  .content-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border: rgba(0, 0, 0, 0.228) 1px solid;
+    border-radius: 5px;
+    label {
+      font-size: 1rem;
+      font-weight: bold;
+      outline: none;
+    }
+    input {
+      height: 2rem;
+      margin: .5rem;
+        padding: 0.5rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+          outline: none;
+    }
+    .swap-con{
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      .from {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 45%;
+        
+      }
+      .icon-convert {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        color: white;
+        width: 35px;
+        height: 35px;
+        background-color: var(--primary-color);
+        cursor: pointer;
+      }      
+      .to {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 45%;
+      }
+      label {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      select  {
+          display: flex;
+          height: 2.2rem;
+          width: 100%;
+          font-weight: bold;
+          padding: 0.5rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+        }
+
+    }
+    button {
+        margin-top: 1rem ;
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1.25rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .convert:hover {
+        background-color: #00b99d;
+      }
+      .result {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+        color: var(--text-color);
+      }
+  }
+  input, 
+  select {
+    background-color: var(--in-sel-bg);
+    color: var(--in-sel-text);
+    border-color: var(--in-sel-border);
+  } 
+}
+
+
+
+/* :root {
+  --primary-color: #01d2b2;
+  --bg-color: #eee;
+  --text-color: #000;
+  --card-bg: #fff;
+  --in-sel-bg: #fff;        /* كان defult 
+  --in-sel-text: #000;      /* كان defult 
+  --in-sel-border: #ccc;    /* كان defult 
+}
+
+/* ضيف في الآخر 
+.status {
+  display: block;
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  min-height: 1.2rem;
+  color: #d9534f;
+}
+.status.success { color: #2ecc71; }
+
+/* Media query بسيطة للموبايل 
+@media (max-width: 480px) {
+  .content-inputs .swap-con {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .content-inputs .swap-con .from,
+  .content-inputs .swap-con .to {
+    width: 100%;
+  }
+  .content-inputs .swap-con .icon-convert {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+} */
