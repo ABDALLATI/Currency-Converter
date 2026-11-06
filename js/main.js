@@ -38,7 +38,8 @@ const convertIcon = document.querySelector(".icon-convert");
 // click convert button
 const convertButton = document.querySelector(".convert");
 convertButton.disabled = true;
-getData("http://api.exchangeratesapi.io/v1/latest?access_key=26ee11b1c996b7fe33798cb9f927d35a")
+// getData("http://api.exchangeratesapi.io/v1/latest?access_key=26ee11b1c996b7fe33798cb9f927d35a")
+  getData("api.json")
   .then((data) => {
     let rates = Object.entries(data.rates);
     for (let i = 0; i < rates.length; i++) {
